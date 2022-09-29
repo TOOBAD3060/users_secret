@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <link rel="stylesheet" href="users.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+           <h2>T</h2>
+           <p>Hello, TOOBAD</p>
+           <a href="/logout"><img title="logout" src="public/images/x-button.png" width="30px"></a>
+           
+        </div>
+
+        <div class="segments">
+            <div class="first">
+                <img id="profile" title="profile" src="public/images/x-button.png" width="30px">
+                <img id="dashboard" title="dashboard" src="public/images/x-button.png" width="30px">
+                <img id="settings" title="settings" src="public/images/x-button.png" width="30px">         
+            </div>
+
+            <div class="second">
+                <div class="profile">
+                      <h3>My Profile</h3>
+                      <p>Registered Name : <span>Olalere Babatunde</span> </p>   
+                      <p>Registered Mail : <span>olalerebabatunde2000@gmail.com</span> </p>   
+                      <p>Address : <span>Camp Apakila</span></p>   
+                      <p>Date of Reg : <span>20th of May,2022</span></p>   
+                </div>
+
+                <div class="dashboard">
+                     Dashboard Loading.........................
+                </div>
+
+                <div class="changepassword">
+                    <h3>Reset Password</h3>
+                    <p class="info"></p>
+                    <form action="/resetPassword" method="post">
+                    <div class="form-group">
+                        <input required class="old_password" placeholder="Enter Current Password" type="password" >
+                        <img class="currentPass js" src="public/images/show.png" width="20px">
+                    </div>
+
+                    <div class="form-group">
+                        <input  required class="new_password" placeholder="Enter New Password" type="password" >
+                        <img class="newPass js" src="public/images/show.png" width="20px">
+                    </div>
+
+                    <div class="form-group">
+                        <input required class="confirm_new" placeholder="Confirm New Password" type="password" name="newpassword">
+                        <img class="confirmPass js" src="public/images/show.png" width="20px">
+                    </div>
+
+                    <button id="submit_btn" type="submit">Change Password</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="users.js"></script>
+</body>
+</html>
